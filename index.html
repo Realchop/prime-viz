@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/body.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/chart.css">
+    <link rel="stylesheet" href="./styles/dygraph.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <title>Anomaly detection</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img src="./assets/menu.svg" alt="Menu button"/>
+            <img class="invisible_icon" src="./assets/close.svg" alt="Close button"/>
+        </div>
+        <h1>Dashboard</h1>
+        <img src="./assets/Prime_logo.png" alt="Prime Holding JSC Logo"/>
+    </header>
+    <section class="chart-container">
+        <div class="chart">
+            <div></div>
+        </div>
+        <div class="counter-container">
+            <div class="counter" >
+                <h1>Anomalies #</h1>
+                <p style="color: rgb(196, 22, 42);"></p>
+                <h1></h1>
+            </div>
+            <div class="counter" >
+                <h1>Anomalies %</h1>
+                <p style="color: rgb(115, 191, 105);" ></p>
+                <h1></h1>
+            </div>
+        </div>
+    </section>
+    <section class="chart-controls">
+        <button class="toggled" >Values</button>
+        <button class="toggled" >Anomalies</button>
+        <select>
+            <option value="12" >Latest 12hrs</option>
+            <option value="24" >Latest 24hrs</option>
+            <option value="7" >Latest week</option>
+            <option value="30" >Latest 30 days</option>
+            <option value="6" >Latest 6 months</option>
+            <option value="1" >Latest year</option>
+            <option value="2" >Latest two years</option>
+            <option value="4" >Latest four years</option>
+        </select>
+    </section>
+    <section class="chart-container">
+        <div class="chart">
+            <div></div>
+        </div>
+        <div class="counter-container">
+            <div class="counter" >
+                <h1>Anomalies #</h1>
+                <p style="color: rgb(196, 22, 42);"></p>
+                <h1></h1>
+            </div>
+            <div class="counter" >
+                <h1>Anomalies %</h1>
+                <p style="color: rgb(115, 191, 105);" ></p>
+                <h1></h1>
+            </div>
+        </div>
+    </section>
+    <div class="legend"></div>
+    <div id="sidebar">
+        <div><img src="./assets/user.svg"/><span>Profile</span></div>
+        <div><img src="./assets/chart.svg"/><span>Dashboard</span></div>
+        <div><img src="./assets/favorites.svg"/><span>Favorites</span></div>
+        <div><img src="./assets/notifications.svg"/><span>Notifications</span></div>
+        <div><img src="./assets/settings.svg"/><span>Settings</span></div>
+    </div>
+    <section class="chart-controls">
+        <button class="toggled" >Values</button>
+        <button class="toggled">Upper</button>
+        <button class="toggled">Lower</button>
+        <button class="toggled">Predicted</button>
+        <button class="toggled" >Anomalies</button>
+        <select>
+            <option value="12" >Latest 12hrs</option>
+            <option selected value="24" >Latest 24hrs</option>
+            <option value="7" >Latest week</option>
+            <option value="30" >Latest 30 days</option>
+            <option value="6" >Latest 6 months</option>
+            <option value="1" >Latest year</option>
+            <option value="2" >Latest two years</option>
+            <option value="4" >Latest four years</option>
+        </select>
+    </section>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/dygraph/2.1.2/dygraph.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

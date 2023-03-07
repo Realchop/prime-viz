@@ -1,0 +1,25 @@
+@media only screen and (max-width: 760px) {
+    .chart-container {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .chart {
+        width: 100%;
+    }
+
+    .counter-container {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .counter {
+        width: fit-content;
+        padding: 1rem;
+    }
+
+    header>img:last-of-type {
+        display: none;
+    }
+}
